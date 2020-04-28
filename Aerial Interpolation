@@ -1,0 +1,2 @@
+SELECT a.cartodb_id, a._17e, a.total, a.inevac, a.percentinevac, a.youthinevac,a.per17evac, ST_Intersection (a.the_geom_webmercator, b.the_geom_webmercator) as the_geom_webmercator 
+FROM youth17 a, evac_buffer b
